@@ -1,0 +1,137 @@
+*{
+    background-color: rgb(100, 237, 214);
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    background-color: rgb(2, 24, 48);
+    color: aliceblue;
+    height: 5rem;
+    line-height: 5rem;
+}
+.board{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    column-gap: 0px;
+}
+.box{
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    font-size: 8rem;
+    display: grid;
+    cursor: pointer;
+}
+.box:hover{
+    transform: scale(1.01);
+    background-color: skyblue;
+}
+#box1{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+#box2{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 2;
+    grid-row: 1;
+}
+#box3{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 3;
+    grid-row: 1;
+}
+#box4{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+#box5{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 2;
+    grid-row: 2;
+}
+#box6{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 3;
+    grid-row: 2;
+}
+#box7{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 1;
+    grid-row: 3;
+}
+#box8{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 2;
+    grid-row: 3;
+}
+#box9{
+    height: 10rem;
+    width: 10rem;
+    grid-column: 3;
+    grid-row: 3;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    gap: 10rem;
+}
+#user-score,
+  #comp-score {
+    font-size: 4rem;
+}
+.msg{
+    margin-top: 1rem;
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-flex;
+    padding: 1rch;
+    border-radius: 1rem;
+}
+#message{
+    background-color: #081b31;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    background-color: #081b31;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .board{
+        height: fit-content;
+        width: fit-content;
+    }
+    .msg{
+        height: fit-content;
+        width: fit-content;
+    }
+    .btn{
+        height: fit-content;
+        width: fit-content;
+    }
+}
